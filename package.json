@@ -1,0 +1,26 @@
+{
+  "name": "workoutanddiet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:frontend\"",
+    "dev:api": "cd apps/api && npm run start",
+    "dev:frontend": "cd apps/frontend && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "WorkoutAndDiet"
+  },
+  "keywords": [
+    "workout",
+    "diet"
+  ],
+  "author": "Tiago Miranda Salviano",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
